@@ -1,0 +1,30 @@
+#navigation {
+  margin: 0;
+  padding-top: 10px;
+  border: none;
+  border-radius: 0;
+  background-color: #073642;
+  font-family: Dosis;
+}
+
+#navigation a {
+  font-size: 2em;
+}
+
+#navigation .navbar-brand {
+  font-size: 3em;
+
+}
+
+#navigation a {
+  color: #B58900;
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+#navigation .hoverable:hover {
+  margin-top: -15px;
+  padding-bottom: 25px;
+}

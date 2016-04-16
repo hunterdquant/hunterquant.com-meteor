@@ -1,0 +1,71 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Source Sans Pro";
+}
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.float {
+  margin: auto;
+  width: 50%;
+  margin-top: 250px;
+}
+.float h1 {
+  text-align: center;
+  color: #DC322F;
+  font-size: 5em;
+}
+.float p {
+  font-family: VT323;
+  text-align: center;
+  color: #839496;
+  font-size: 2em;
+}
+.float #keyword {
+  color: #859900;
+}
+.float #val {
+  color: #D33682;
+}
+.slide, .slide:before {
+  background: 50% 50% / cover;
+}
+#me:before {
+  background-color: #073642;
+  background-image: url("./images/hunter.png");
+  background-size: 450px;
+  background-position: 50% 10%;
+  background-repeat: no-repeat;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+#content {
+  background-color: #FDF6E3;
+  background-attachment: fixed;
+}
+#learn-more {
+  background: #222;
+}
