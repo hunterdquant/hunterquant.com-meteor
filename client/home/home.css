@@ -56,8 +56,8 @@ body {
 #me:before {
   background-color: #073642;
   background-image: url("./images/hunter.png");
-  background-size: 450px;
-  background-position: 50% 10%;
+  background-size: 400px;
+  background-position: 50% 20%;
   background-repeat: no-repeat;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
