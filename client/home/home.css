@@ -28,9 +28,9 @@ body {
   left: 0;
   right: 0;
 }
-.float {
+#me .float {
   margin: auto;
-  width: 50%;
+  width: 80%;
   margin-top: 250px;
 }
 .float h1 {
@@ -38,7 +38,7 @@ body {
   color: #DC322F;
   font-size: 5em;
 }
-.float p {
+#me .float p {
   font-family: VT323;
   text-align: center;
   color: #839496;
@@ -63,9 +63,29 @@ body {
   z-index: -1;
 }
 #content {
+  padding: 20px;
   background-color: #FDF6E3;
   background-attachment: fixed;
 }
 #learn-more {
   background: #222;
+}
+
+#content .float {
+  margin: auto;
+  width: 80%;
+}
+
+#content h3 {
+  padding-bottom: 5px;
+  font-family: Dosis;
+  font-size: 2.5em;
+  color: #268BD2;
+  text-align: left;
+  border-bottom: 3px solid #657B83;
+}
+
+#content p {
+  font-size: 1.5em;
+  color: #576E75;
 }
