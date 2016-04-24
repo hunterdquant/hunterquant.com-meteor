@@ -9,7 +9,6 @@ body {
   padding: 0;
   height: 100%;
   font-family: "Source Sans Pro";
-
   perspective: 1px;
   transform-style: preserve-3d;
 }
@@ -17,9 +16,8 @@ body {
   position: relative;
   box-sizing: border-box;
   padding: 25vh 10%;
-  min-height: 100vh;
+  min-height: 50vh;
   width: 100vw;
-
   transform-style: inherit;
 }
 .slide:before {
@@ -35,17 +33,29 @@ body {
   background: 50% 50% / cover;
 }
 
-.float {
+.projects .float {
+  padding: 50px;
   margin: auto;
   margin-top: 250px;
   width: 80%;
+  background-color: #FDF6E3;
 }
 
-.float p {
-  color: #839496;
+.projects .float h2 {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #657B83;
+  color: #268BD2;
+  text-align: left;
+  font-size: 2.5em;
+  font-family: Dosis;
+}
+
+.projects .float p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #576E75;
   text-align: center;
   font-size: 2em;
-  font-family: VT323;
 }
 
 .back:before {
