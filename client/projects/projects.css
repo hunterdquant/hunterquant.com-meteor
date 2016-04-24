@@ -1,0 +1,73 @@
+html {
+  overflow: hidden;
+  height: 100%;
+}
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Source Sans Pro";
+
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+.slide {
+  position: relative;
+  box-sizing: border-box;
+  padding: 25vh 10%;
+  min-height: 100vh;
+  width: 100vw;
+
+  transform-style: inherit;
+}
+.slide:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;
+}
+
+.float {
+  margin: auto;
+  margin-top: 250px;
+  width: 80%;
+}
+
+.float p {
+  color: #839496;
+  text-align: center;
+  font-size: 2em;
+  font-family: VT323;
+}
+
+.back:before {
+  z-index: -1;
+  background-color: #073642;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: translateZ(-1px) scale(2);
+}
+
+#rotate-js:before {
+  background-image: url("./images/rotatejs-code.jpg");
+}
+#beat-blocks:before {
+  background-image: url("./images/beatblocks-code.jpg");
+}
+#carbon-nation:before {
+  background-image: url("./images/carbonnation-code.jpg");
+}
+#somers-hot-bagels:before {
+  background-image: url("./images/somershotbagels-code.jpg");
+}
+#terminal-zone:before {
+  background-image: url("./images/terminalzone-code.jpg");
+}
