@@ -1,48 +1,50 @@
 html {
-  height: 100%;
   overflow: hidden;
+  height: 100%;
 }
 body {
+  overflow-x: hidden;
+  overflow-y: scroll;
   margin: 0;
   padding: 0;
+  height: 100%;
+  font-family: "Source Sans Pro";
+
   perspective: 1px;
   transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: "Source Sans Pro";
 }
 .slide {
   position: relative;
+  box-sizing: border-box;
   padding: 25vh 10%;
   min-height: 100vh;
   width: 100vw;
-  box-sizing: border-box;
+
   transform-style: inherit;
 }
 .slide:before {
-  content: "";
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
+  content: "";
 }
 #me .float {
   margin: auto;
-  width: 80%;
   margin-top: 250px;
+  width: 80%;
 }
 .float h1 {
-  text-align: center;
   color: #DC322F;
+  text-align: center;
   font-size: 5em;
 }
 #me .float p {
-  font-family: VT323;
-  text-align: center;
   color: #839496;
+  text-align: center;
   font-size: 2em;
+  font-family: VT323;
 }
 .float #keyword {
   color: #859900;
@@ -54,79 +56,94 @@ body {
   background: 50% 50% / cover;
 }
 #me:before {
+  z-index: -1;
   background-color: #073642;
   background-image: url("./images/hunter.png");
-  background-size: 400px;
   background-position: 50% 20%;
+  background-size: 400px;
   background-repeat: no-repeat;
   transform: translateZ(-1px) scale(2);
-  z-index: -1;
 }
 #content {
   padding: 20px;
   background-color: #FDF6E3;
   background-attachment: fixed;
 }
-
 #content .float {
   margin: auto;
   width: 80%;
 }
-
 #content h3 {
   padding-bottom: 5px;
-  font-family: Dosis;
-  font-size: 2.5em;
+  border-bottom: 3px solid #657B83;
   color: #268BD2;
   text-align: left;
-  border-bottom: 3px solid #657B83;
+  font-size: 2.5em;
+  font-family: Dosis;
 }
-
 #content p {
-  font-size: 1.5em;
   color: #576E75;
+  font-size: 1.5em;
 }
-
 #content .container section {
   display: inline;
   width: 20%;
 }
-
 #content h4 {
-  font-size: 2em;
   padding-bottom: 5px;
-  font-family: Dosis;
   color: #B58900;
+  font-size: 2em;
+  font-family: Dosis;
 }
-
 #content .goals h4 {
   text-align: center;
 }
-
 #content .skills h5 {
-  font-family: Dosis;
   font-size: 1.8em;
+  font-family: Dosis;
 }
-
 #content .skills .skill-names {
-  font-weight: bold;
   color: #6C71C4;
+  font-weight: bold;
 }
-
 #content .skills .skill-ranks {
   color: #CB4B16;
 }
-
 #content .education ul {
+  color: #576E75;
   list-style-type: none;
   font-size: 1.5em;
-  color: #576E75;
 }
-
 #content .education .edu-attrib {
   font-weight: bold;
 }
-
 #learn-more {
+  display: flex;
+  min-height: 100vh;
   background: #073642;
+}
+#learn-more .float {
+  margin: 0 auto;
+}
+#learn-more h1 {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-top: 35vh;
+  color: #268BD2;
+  font-weight: bold;
+  font-size: 10vw;
+  font-family: Dosis;
+}
+#learn-more a:link {
+  color: #268BD2;
+}
+#learn-more a:visited {
+  color: #268BD2;
+}
+#learn-more a:hover {
+  color: #2AA198;
+}
+#learn-more a:active {
+  color: #2AA198;
 }
