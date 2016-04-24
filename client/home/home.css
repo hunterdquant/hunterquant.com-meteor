@@ -105,3 +105,16 @@ body {
 #content .goals h4 {
   text-align: center;
 }
+
+#content .skills h5 {
+  font-family: Dosis;
+  font-size: 1.8em;
+}
+
+#content .skills .skill-names {
+  color: #CB4B16;
+}
+
+#content .skills .skill-ranks {
+  color: #6C71C4;
+}
