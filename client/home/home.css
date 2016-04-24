@@ -67,9 +67,6 @@ body {
   background-color: #FDF6E3;
   background-attachment: fixed;
 }
-#learn-more {
-  background: #222;
-}
 
 #content .float {
   margin: auto;
@@ -112,9 +109,24 @@ body {
 }
 
 #content .skills .skill-names {
-  color: #CB4B16;
+  font-weight: bold;
+  color: #6C71C4;
 }
 
 #content .skills .skill-ranks {
-  color: #6C71C4;
+  color: #CB4B16;
+}
+
+#content .education ul {
+  list-style-type: none;
+  font-size: 1.5em;
+  color: #576E75;
+}
+
+#content .education .edu-attrib {
+  font-weight: bold;
+}
+
+#learn-more {
+  background: #073642;
 }
