@@ -35,10 +35,11 @@ body {
   margin-top: 250px;
   width: 80%;
 }
-.float h1 {
+#me .float h1 {
   color: #DC322F;
   text-align: center;
   font-size: 5em;
+  font-family: Dosis;
 }
 #me .float p {
   color: #839496;
