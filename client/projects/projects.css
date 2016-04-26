@@ -1,47 +1,10 @@
-html {
-  overflow: hidden;
-  height: 100%;
-}
-body {
-  overflow-x: hidden;
-  overflow-y: scroll;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: "Source Sans Pro";
-  perspective: 1px;
-  transform-style: preserve-3d;
-}
-.slide {
-  position: relative;
-  box-sizing: border-box;
-  padding: 25vh 10%;
-  min-height: 50vh;
-  width: 100vw;
-  transform-style: inherit;
-}
-.slide:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  content: "";
-}
-
-.slide, .slide:before {
-  background: 50% 50% / cover;
-}
-
-.projects .float {
-  padding: 50px;
-  margin: auto;
-  margin-top: 250px;
+.projects {
+  display: block;
   width: 80%;
-  background-color: #FDF6E3;
+  margin: 0 auto;
 }
 
-.projects .float h2 {
+.projects h2 {
   padding-bottom: 5px;
   border-bottom: 3px solid #657B83;
   color: #268BD2;
@@ -50,34 +13,47 @@ body {
   font-family: Dosis;
 }
 
-.projects .float p {
+.projects p {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #576E75;
-  text-align: center;
+  text-align: left;
   font-size: 2em;
 }
 
-.back:before {
-  z-index: -1;
-  background-color: #073642;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transform: translateZ(-1px) scale(2);
+#rotate-js, #beat-blocks, #carbon-nation, #somers-hot-bagels, #terminal-zone {
+  padding: 10px;
+  margin: 20px;
+  margin-top: 30px;
+  background-color: #FDF6E3;
 }
 
-#rotate-js:before {
-  background-image: url("./images/rotatejs-code.jpg");
+#learn-more-2 {
+  display: flex;
+  min-height: 100vh;
+  background-color: #FDF6E3;
 }
-#beat-blocks:before {
-  background-image: url("./images/beatblocks-code.jpg");
+#learn-more-2 .float {
+  margin: 0 auto;
 }
-#carbon-nation:before {
-  background-image: url("./images/carbonnation-code.jpg");
+#learn-more-2 h1 {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-top: 35vh;
+  color: #268BD2;
+  font-weight: bold;
+  font-size: 10vw;
 }
-#somers-hot-bagels:before {
-  background-image: url("./images/somershotbagels-code.jpg");
+#learn-more-2 a:link {
+  color: #268BD2;
 }
-#terminal-zone:before {
-  background-image: url("./images/terminalzone-code.jpg");
+#learn-more-2 a:visited {
+  color: #268BD2;
+}
+#learn-more-2 a:hover {
+  color: #2AA198;
+}
+#learn-more-2 a:active {
+  color: #2AA198;
 }

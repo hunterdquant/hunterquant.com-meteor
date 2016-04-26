@@ -9,7 +9,6 @@ body {
   padding: 0;
   height: 100%;
   font-family: "Source Sans Pro";
-
   perspective: 1px;
   transform-style: preserve-3d;
 }
@@ -121,7 +120,7 @@ body {
 #learn-more {
   display: flex;
   min-height: 100vh;
-  background: #073642;
+  background-color: #073642;
 }
 #learn-more .float {
   margin: 0 auto;
